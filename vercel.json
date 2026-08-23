@@ -8,21 +8,16 @@
     {
       "source": "/__blackriver/ollama/chat",
       "destination": "https://ollama.com/api/chat"
-    },
-    {
-      "source": "/__blackriver/nvidia/models",
-      "destination": "https://integrate.api.nvidia.com/v1/models"
-    },
-    {
-      "source": "/__blackriver/nvidia/chat/completions",
-      "destination": "https://integrate.api.nvidia.com/v1/chat/completions"
     }
   ],
   "headers": [
     {
       "source": "/__blackriver/:path*",
       "headers": [
-        { "key": "x-vercel-enable-rewrite-caching", "value": "0" }
+        {
+          "key": "x-vercel-enable-rewrite-caching",
+          "value": "0"
+        }
       ]
     }
   ]
